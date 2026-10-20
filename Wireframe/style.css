@@ -17,9 +17,9 @@ As well as useful links to learn more */
  https://scrimba.com/learn-css-variables-c026
 ====== Design Palette ====== */
 :root {
-  --paper: oklch(7 0 0);
+  --paper: #b7b7a4;
   --ink: color-mix(in oklab, var(--color) 5%, black);
-  --font: 100%/1.5 system-ui;
+  --font: 100%/1.5 georgia, serif;
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
@@ -32,10 +32,22 @@ body {
   font: var(--font);
 }
 a {
-  padding: var(--space);
+  padding: 10px;
   border: var(--line);
-  max-width: fit-content;
+  width: 140px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #e9edc9;
+  box-sizing: border-box;
+  
 }
+
+a:hover {
+  background-color: #d4e09b;
+}
+
 img,
 svg {
   width: 100%;
@@ -50,9 +62,9 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
   bottom: 0;
   text-align: center;
+  box-sizing: border-box;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -75,6 +87,7 @@ Now laying out just the INSIDE of the repeated card/article design.
 Keeping things orderly and separate is the key to good, simple CSS.
 */
 article {
+  background-color: #fffcf2;
   border: var(--line);
   padding-bottom: var(--space);
   text-align: left;
@@ -86,4 +99,33 @@ article {
   > img {
     grid-column: span 3;
   }
+
+}
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+header h1 {
+  margin-bottom: 6px;
+}
+
+header h2 {
+  margin-bottom: 2px;
+}
+
+header p {
+  margin-top: 0;
+}
+
+p {
+  margin-top:0;
+  font-size: 30px;
 }
