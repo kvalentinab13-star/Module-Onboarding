@@ -9,19 +9,48 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
+      <h1>T-shirt Information</h1>
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="e-mail">E-mail</label>
+        <input type="email" id="e-mail" name="e-mail" required>
+
+        <fieldset>
+          <legend>Favourite Colour</legend>
+      
+        <label for="blue">Blue</label>
+        <input type="radio" id="blue" name="favourite-colour" value="blue" required>
+
+        <label for="red">Red</label> 
+        <input type="radio" id="red" name="favourite-colour" value="red">
+
+        <label for="black">Black</label>
+        <input type="radio" id="black" name="favourite-colour" value="black">
+        </fieldset>
+
+        <label for="size">Clothing Size</label>
+
+        <select id="size" name="size" required>
+          <option value="">Select a size</option>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+
+        <button type="submit">Submit</button>
+
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Karen Valentina Gonzalez</h2>
     </footer>
   </body>
 </html>
