@@ -34,11 +34,11 @@ body {
 a {
   padding: 10px;
   border: var(--line);
-  width: 140px;
   text-align: center;
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
+  width: 140px;
   background-color: #e9edc9;
   box-sizing: border-box;
   
@@ -62,9 +62,12 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
+  position: fixed;
   bottom: 0;
+  left 0;
+  right: 0;
   text-align: center;
-  box-sizing: border-box;
+  background: var(--paper);
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
@@ -115,10 +118,6 @@ h2 {
 
 header h1 {
   margin-bottom: 6px;
-}
-
-header h2 {
-  margin-bottom: 2px;
 }
 
 header p {
